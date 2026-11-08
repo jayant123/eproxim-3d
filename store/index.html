@@ -1,0 +1,140 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Store experience (local test)</title><style>html,body{margin:0;background:#0e0d0c}</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet"><style>#epx-x{--ink:#0e0d0c;--bone:#eee9e1;--flame:#ff6a2b;--mint:#a6e3d0;--smoke:#9a938a;--line:rgba(238,233,225,.14);--disp:'Archivo',system-ui,sans-serif;--sans:'Hanken Grotesk',system-ui,sans-serif;background:var(--ink);color:var(--bone);font-family:var(--sans);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;position:relative;overflow-x:clip}#epx-x *{box-sizing:border-box}#epx-x a{color:inherit}#epx-x :focus-visible{outline:2px solid var(--flame);outline-offset:3px;border-radius:2px}.x-vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.x-skip{position:absolute;left:16px;top:-60px;z-index:60;background:var(--bone);color:var(--ink)!important;padding:10px 14px;text-decoration:none}.x-skip:focus{top:12px}.x-header{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:20px clamp(16px,4vw,56px)}.x-logo{display:flex;align-items:center;gap:12px;text-decoration:none}.x-logo span{font-family:var(--disp);font-weight:600;font-size:14px;letter-spacing:.26em;color:var(--bone)}.x-nav{display:flex;align-items:center;gap:clamp(14px,2.4vw,32px);font-size:15px}.x-nav>a:not(.x-btn){text-decoration:none;opacity:.8}.x-nav>a:not(.x-btn):hover{opacity:1}.x-btn{display:inline-block;background:var(--flame);color:#170800!important;text-decoration:none;font-weight:600;padding:15px 24px;border-radius:999px;font-size:16px;line-height:1;border:1px solid var(--flame);transition:background .2s,border-color .2s}.x-btn:hover{background:#ff8a55;border-color:#ff8a55}.x-btn--sm{padding:10px 16px;font-size:14px}.x-btn--ghost{background:transparent;color:var(--bone)!important;border-color:rgba(238,233,225,.38)}.x-btn--ghost:hover{background:rgba(238,233,225,.08);border-color:rgba(238,233,225,.6)}.x-link{color:var(--flame)!important;text-underline-offset:4px}.x-story{position:relative;height:1000vh}.x-stage{position:sticky;top:0;height:100vh;width:100%;overflow:hidden;z-index:1;pointer-events:none}.x-stage canvas{position:absolute;inset:0;z-index:2;display:block;width:100%!important;height:100%!important;opacity:0;transition:opacity 1.2s ease}.x-ready .x-stage canvas{opacity:1}.x-stage::after{content:"";position:absolute;inset:0;z-index:4;pointer-events:none;opacity:.09;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}.x-stage::before{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(120% 90% at 60% 45%,transparent 55%,rgba(0,0,0,.55))}.x-giant{position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;padding-left:14vw}.x-giant__word{font-family:var(--disp);font-weight:800;font-stretch:125%;font-variation-settings:'wdth' 125;line-height:.8;letter-spacing:-.04em;color:#26221e;white-space:nowrap;opacity:0;transform:translateY(6vh);transition:opacity .5s ease,transform .7s cubic-bezier(.2,.8,.2,1)}.x-giant__word.is-on{opacity:1;transform:none}.x-hud{position:absolute;inset:0;z-index:5}.x-loading{position:absolute;left:50%;bottom:10vh;width:120px;height:2px;margin-left:-60px;background:rgba(238,233,225,.12);overflow:hidden;transition:opacity .6s}.x-loading i{display:block;height:100%;width:0;background:var(--flame);transition:width .3s}.x-ready .x-loading{opacity:0}.x-cap{position:absolute;right:clamp(16px,4vw,64px);bottom:9vh;margin:0;text-align:right;opacity:0;transition:opacity .4s;display:grid;gap:2px}.x-cap__name{font-family:var(--disp);font-weight:600;font-size:20px;letter-spacing:.01em}.x-cap__price{color:var(--smoke);font-size:15px}.x-ch{position:absolute;left:0;right:0;top:calc(var(--s) * 900vh);height:calc((var(--e) - var(--s)) * 900vh + 100vh);z-index:3;pointer-events:none}.x-ch--type{z-index:0}.x-copy{position:sticky;top:26vh;margin-left:clamp(16px,6vw,96px);max-width:min(36vw,500px);pointer-events:auto;text-shadow:0 1px 30px rgba(14,13,12,.9)}.x-ch--end .x-copy{top:28vh}.x-copy h2{font-family:var(--disp);font-weight:700;font-stretch:112%;font-variation-settings:'wdth' 112;font-size:clamp(36px,4.2vw,68px);line-height:.98;letter-spacing:-.025em;margin:0 0 22px}.x-copy p{margin:0 0 14px;font-size:clamp(17px,1.3vw,20px);color:#cfc9c0;max-width:36ch}.x-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:26px!important}.x-scroll{font-size:13px;letter-spacing:.08em;color:var(--smoke);padding-left:8px}.x-herotype{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:flex-start;padding:16vh clamp(16px,4vw,56px) 0}.x-herotype span{display:block;font-family:var(--disp);font-weight:800;font-stretch:125%;font-variation-settings:'wdth' 125;font-size:clamp(54px,8.6vw,168px);line-height:.86;letter-spacing:-.045em;color:var(--bone);opacity:0;transform:translateY(40px);transition:opacity 1s ease,transform 1.2s cubic-bezier(.2,.8,.2,1)}.x-herotype span+span{transition-delay:.12s}.x-on .x-herotype span{opacity:1;transform:none}.x-ch--hero .x-copy{position:sticky;top:auto;bottom:0;margin-top:calc(100vh - 250px);max-width:min(44vw,600px)}.x-ch--hero .x-copy p:first-of-type{font-size:clamp(16px,1.15vw,18px);max-width:52ch}.x-labels{position:absolute;inset:0}.x-node{position:absolute;left:0;top:0;opacity:0;font-size:13px;font-weight:500;letter-spacing:.02em;padding:6px 11px;border:1px solid var(--line);border-radius:999px;background:rgba(14,13,12,.7);white-space:nowrap;transition:border-color .3s,color .3s}.x-node.is-on{border-color:var(--flame);color:#ffb08c}.x-card,.x-checkout{position:absolute;right:clamp(16px,4vw,64px);top:24vh;width:min(340px,86vw);background:rgba(24,22,20,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:16px;padding:22px;opacity:0;visibility:hidden;pointer-events:auto}.x-card__brand{margin:0;font-family:var(--disp);font-size:12px;font-weight:600;letter-spacing:.3em;color:var(--flame)}.x-card__name{font-family:var(--disp);font-weight:700;font-stretch:112%;font-variation-settings:'wdth' 112;font-size:26px;letter-spacing:-.01em;margin:8px 0 4px;color:var(--bone)}.x-card__price{margin:0 0 16px;color:var(--bone);font-size:17px}.x-stock{display:block;font-size:13px;color:var(--mint)}.x-finishes{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}.x-finishes button{display:flex;align-items:center;gap:7px;font:inherit;font-size:13px;color:var(--bone);background:transparent;border:1px solid rgba(238,233,225,.22);border-radius:999px;padding:6px 10px;cursor:pointer}.x-finishes button i{width:12px;height:12px;border-radius:50%;display:block;border:1px solid rgba(255,255,255,.3)}.x-finishes button[aria-pressed="true"]{border-color:var(--bone);background:rgba(238,233,225,.08)}.x-add{width:100%;font:inherit;font-weight:600;font-size:15px;background:var(--bone);color:var(--ink);border:0;border-radius:999px;padding:13px;cursor:pointer}.x-add.is-added{background:var(--mint)}.x-note{margin:12px 0 0;font-size:12px;color:var(--smoke)}.x-steps{list-style:none;margin:0;padding:0;display:grid;gap:12px}.x-step{display:grid;gap:2px;padding:12px 14px;border-radius:10px;border:1px solid rgba(238,233,225,.1);color:#7d776f;transition:all .35s}.x-step b{font-weight:600;font-size:15px}.x-step span{font-size:13px}.x-step.is-done{color:#cfc9c0}.x-step.is-active{color:var(--bone);border-color:var(--flame);background:rgba(255,106,43,.08)}.x-step:last-child.is-active{border-color:var(--mint);background:rgba(166,227,208,.08);box-shadow:0 0 0 4px rgba(166,227,208,.1)}.x-nogl .x-stage{background:radial-gradient(50% 45% at 65% 60%,rgba(255,106,43,.18),transparent 70%)}.x-after{position:relative;z-index:2;background:var(--ink)}.x-sec{max-width:1180px;margin:0 auto;padding:clamp(64px,10vw,128px) clamp(16px,4vw,32px);border-top:1px solid var(--line)}.x-sec h2{font-family:var(--disp);font-weight:700;font-stretch:112%;font-variation-settings:'wdth' 112;font-size:clamp(32px,3.8vw,56px);line-height:1;letter-spacing:-.025em;margin:0 0 32px;max-width:18ch}.x-sec h3{font-size:19px;font-weight:600;margin:0 0 8px;color:var(--bone)}.x-sec p,.x-sec dd{color:#c4beb5}.x-intro{border-top:0}.x-intro h2{font-weight:800;font-stretch:125%;font-variation-settings:'wdth' 125;font-size:clamp(40px,6vw,96px);line-height:.92;letter-spacing:-.04em;max-width:14ch}.x-intro p{font-size:clamp(18px,1.5vw,22px);max-width:52ch}.x-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,48px)}.x-cols>div{padding-top:18px;border-top:2px solid var(--flame)}.x-cols>div:nth-child(2){border-top-color:var(--mint)}.x-cols>div:nth-child(3){border-top-color:var(--bone)}.x-systems{display:grid;margin:0}.x-systems>div{display:grid;grid-template-columns:minmax(160px,240px) 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--line)}.x-systems dt{color:var(--flame);font-weight:600}.x-systems dd{margin:0}.x-work blockquote{margin:0 0 28px;padding:0;max-width:62ch}.x-work blockquote p{font-size:clamp(21px,2vw,28px);line-height:1.42;color:var(--bone)}.x-start{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,48px)}.x-start li{counter-increment:s}.x-start li::before{content:counter(s);display:block;font-family:var(--disp);font-weight:800;font-stretch:125%;font-variation-settings:'wdth' 125;font-size:56px;color:var(--flame);line-height:1;margin-bottom:14px}.x-contact{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(24px,5vw,72px);align-items:start}.x-contact__alt{font-size:16px}.x-contact__alt a{color:var(--flame)}.x-contact__form{background:#f4f1ec;border-radius:16px;padding:8px;min-height:880px}.x-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;max-width:1180px;margin:0 auto;padding:32px clamp(16px,4vw,32px) 48px;font-size:14px;color:var(--smoke);border-top:1px solid var(--line)}.x-footer p{margin:0}.x-footer a{margin-left:16px;color:var(--smoke)}@media (max-width:819px){#epx-x{font-size:17px}.x-nav>a:not(.x-btn){display:none}.x-copy{top:12vh;max-width:none;margin:0 16px}.x-ch--end .x-copy{top:12vh}.x-copy h2{font-size:clamp(30px,8.6vw,42px)}.x-herotype{padding-top:13vh}.x-herotype span{font-size:13.2vw}.x-ch--hero .x-copy{margin-top:calc(100vh - 330px);max-width:58%}.x-ch--hero .x-copy p:first-of-type{font-size:15px;line-height:1.5}.x-giant{padding-left:0;align-items:flex-start;padding-top:46vh}.x-card,.x-checkout{left:16px;right:16px;top:auto;width:auto;bottom:3vh;padding:16px}.x-card__name{font-size:20px;margin:4px 0 2px}.x-card__price{margin-bottom:10px}.x-card .x-note,.x-stock{display:none}.x-finishes{margin-bottom:10px}.x-steps{gap:8px}.x-step{padding:8px 12px}.x-cap{bottom:5vh}.x-cols,.x-start{grid-template-columns:1fr}.x-systems>div{grid-template-columns:1fr;gap:4px}.x-contact{grid-template-columns:1fr}.x-footer a{margin:0 16px 0 0}}@media (prefers-reduced-motion:reduce){ .x-step,.x-btn,.x-giant__word,.x-herotype span{transition:none} }</style></head><body><div id="epx-x">
+<a class="x-skip" href="#x-after">Skip the animation</a>
+<header class="x-header">
+  <a class="x-logo" href="https://eproxim.com/" aria-label="eProxim home">
+    <svg viewBox="0 0 100 100" width="30" height="30" aria-hidden="true"><rect x="2" y="2" width="96" height="96" rx="20" fill="#4E8F6C"></rect><g fill="none" stroke="#0F1B14" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M 19,54 L 46,54"></path><path d="M 48.1,59.1 A 15 15 0 1 0 40.3 67.6"></path><path d="M 66,79 L 66,25 A 14 14 0 0 1 66 53"></path></g></svg>
+    <span>EPROXIM</span>
+  </a>
+  <nav class="x-nav" aria-label="Main">
+    <a href="https://eproxim.com/case-studies/">Work</a>
+    <a href="https://eproxim.com/services/">Services</a>
+    <a class="x-btn x-btn--sm" href="#x-contact">Start a project</a>
+  </nav>
+</header>
+
+<section class="x-story" aria-label="How we build a store, from the first product to the systems behind every order">
+  <div class="x-stage">
+    <div class="x-giant" aria-hidden="true"><span class="x-giant__word"></span></div>
+    <div class="x-hud">
+      <div class="x-loading" aria-hidden="true"><i></i></div>
+      <p class="x-cap" aria-hidden="true"><b class="x-cap__name"></b><span class="x-cap__price"></span></p>
+      <div class="x-labels" aria-hidden="true">
+        <span class="x-node" data-node="0">Payments</span>
+        <span class="x-node" data-node="1">Inventory</span>
+        <span class="x-node" data-node="2">Customers</span>
+        <span class="x-node" data-node="3">Shipping</span>
+        <span class="x-node" data-node="4">Accounting</span>
+      </div>
+      <aside class="x-card" aria-label="Example product page, FORMA Arc desk lamp">
+        <p class="x-card__brand">FORMA</p>
+        <h3 class="x-card__name">Arc desk lamp</h3>
+        <p class="x-card__price">$180 <span class="x-stock">In stock, ships tomorrow</span></p>
+        <div class="x-finishes" role="group" aria-label="Finish">
+          <button type="button" data-finish="0" aria-pressed="true"><i style="background:#e8642c"></i>Signal orange</button>
+          <button type="button" data-finish="1" aria-pressed="false"><i style="background:#3a3a3c"></i>Graphite</button>
+          <button type="button" data-finish="2" aria-pressed="false"><i style="background:#9fd8c6"></i>Mint</button>
+        </div>
+        <button type="button" class="x-add">Add to cart</button>
+        <p class="x-note">FORMA is a fictional store, shown for illustration.</p>
+      </aside>
+      <aside class="x-checkout" aria-label="Example checkout">
+        <ol class="x-steps">
+          <li class="x-step"><b>Cart</b><span class="x-step__item">Arc desk lamp, Signal orange</span></li>
+          <li class="x-step"><b>Payment</b><span>Card ending 4242</span></li>
+          <li class="x-step"><b>Order confirmed</b><span>Order FM-1042, $180.00</span></li>
+        </ol>
+        <p class="x-note">A demonstration. No payment is taken.</p>
+      </aside>
+    </div>
+  </div>
+
+  <div class="x-ch x-ch--type" style="--s:0;--e:.11" aria-hidden="true">
+    <div class="x-herotype"><span>Stores people</span><span>want to buy from.</span></div>
+  </div>
+  <section class="x-ch x-ch--hero" style="--s:0;--e:.11">
+    <div class="x-copy">
+      <h1 class="x-vh">Stores people want to buy from.</h1>
+      <p>We design and build Shopify, WooCommerce and BigCommerce stores, then connect them to the systems that run the business behind them. We have been doing it for more than 25 years.</p>
+      <p class="x-ctas"><a class="x-btn" href="#x-contact">Start a project</a><span class="x-scroll" aria-hidden="true">Scroll</span></p>
+    </div>
+  </section>
+  <section class="x-ch" style="--s:.12;--e:.41">
+    <div class="x-copy"><h2>Designed to make people stop.</h2><p>Every product deserves a page that shows it the way it looks in person, so shoppers feel sure before they buy.</p></div>
+  </section>
+  <section class="x-ch" style="--s:.43;--e:.56">
+    <div class="x-copy"><h2>Every detail earns its place.</h2><p>Finishes, sizes and options that change the product in front of you, with the price and stock always right.</p></div>
+  </section>
+  <section class="x-ch" style="--s:.57;--e:.68">
+    <div class="x-copy"><h2>From discovery to done.</h2><p>A checkout with nothing in the way, so interest turns into a sale.</p>
+      <p class="x-ctas"><a class="x-link" href="#x-contact">Want a checkout like this? Start a project</a></p></div>
+  </section>
+  <section class="x-ch" style="--s:.70;--e:.85">
+    <div class="x-copy"><h2>The part you don't notice.</h2><p>Payments, inventory, customers, shipping and accounting, connected so every order flows through without anyone typing it twice.</p></div>
+  </section>
+  <section class="x-ch x-ch--end" style="--s:.88;--e:1">
+    <div class="x-copy"><h2>Let's build something worth visiting.</h2><p>From your first idea to your first order, and everything that happens afterward.</p>
+      <p class="x-ctas"><a class="x-btn" href="#x-contact">Start a project</a><a class="x-btn x-btn--ghost" href="https://eproxim.com/case-studies/">Explore our work</a></p></div>
+  </section>
+</section>
+
+<main id="x-after" class="x-after">
+  <section class="x-sec x-intro">
+    <h2>Beautiful on the outside. Brilliant underneath.</h2>
+    <p>We have been building online stores for more than 25 years. We design and build the store your customers see, and we connect it to the software that runs the business behind it.</p>
+  </section>
+
+  <section class="x-sec" aria-labelledby="x-svc">
+    <h2 id="x-svc">What we build</h2>
+    <div class="x-cols">
+      <div><h3>The store</h3><p>Design and build on Shopify, WooCommerce and BigCommerce: product pages, collections, search, cart and checkout, built to sell and easy for your team to run.</p></div>
+      <div><h3>The systems behind it</h3><p>Orders, customers, stock and invoices flowing between the store and your accounting, CRM, marketing, inventory and shipping tools, so nobody types the same order twice.</p></div>
+      <div><h3>The work after launch</h3><p>New integrations, fixes and improvements as the business grows, by fixed-price job, by the hour, or as a monthly block of hours.</p></div>
+    </div>
+  </section>
+
+  <section class="x-sec" aria-labelledby="x-int">
+    <h2 id="x-int">Systems we connect</h2>
+    <dl class="x-systems">
+      <div><dt>Commerce</dt><dd>Shopify, WooCommerce, BigCommerce, Adobe Commerce, Wix, Squarespace, Amazon, Etsy</dd></div>
+      <div><dt>Accounting</dt><dd>QuickBooks Online, Xero, Sage, FreshBooks, Zoho Books, NetSuite</dd></div>
+      <div><dt>Customers and marketing</dt><dd>HubSpot, Salesforce, Zoho CRM, Pipedrive, Klaviyo, Mailchimp, ActiveCampaign, Google Ads, Meta Ads</dd></div>
+      <div><dt>Inventory and shipping</dt><dd>Cin7, Fishbowl, Katana, Linnworks, ShipStation, Zoho Inventory</dd></div>
+      <div><dt>Automation</dt><dd>Zapier, Make, Airtable, Webflow, and custom APIs when the off-the-shelf connector stops being enough</dd></div>
+    </dl>
+  </section>
+
+  <section class="x-sec x-work" aria-labelledby="x-wk">
+    <h2 id="x-wk">Recent work</h2>
+    <blockquote>
+      <p>A fast-growing Atlanta retailer of sports apparel and athletic shoes needed its marketing and its store to work as one. We connected Shopify and HubSpot, so the team could trace successful ads all the way to the purchases they produced, retarget the right customers, and give buyers better service from the same data.</p>
+    </blockquote>
+    <p><a class="x-btn x-btn--ghost" href="https://eproxim.com/case-studies/">Explore our work</a></p>
+  </section>
+
+  <section class="x-sec" aria-labelledby="x-how">
+    <h2 id="x-how">How a project starts</h2>
+    <ol class="x-start">
+      <li><h3>Tell us what you need</h3><p>A few sentences about the store or the systems involved is enough to begin.</p></li>
+      <li><h3>Agree a fixed scope</h3><p>We write down what gets built and what done looks like, with a price before work starts.</p></li>
+      <li><h3>Start within a week</h3><p>We can usually begin within a week. Small, well-defined jobs are welcome.</p></li>
+    </ol>
+  </section>
+
+  <section class="x-sec x-contact" id="x-contact" aria-labelledby="x-ct">
+    <div class="x-contact__copy">
+      <h2 id="x-ct">Start a project</h2>
+      <p>Send us a few lines about your store. A senior engineer reads every message.</p>
+      <p class="x-contact__alt">Prefer to call? <a href="tel:+17706746577">770-674-6577</a><br>12600 Deerfield Pkwy, Ste 100, Alpharetta, GA 30004</p>
+    </div>
+    <div class="x-contact__form">
+      <iframe src="https://app.eproxim.com/widget/form/aq7vTknRCPovC0S3krKm" style="width:100%;height:100%;border:none;border-radius:4px" id="inline-aq7vTknRCPovC0S3krKm" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Contact Form" data-height="880" data-layout-iframe-id="inline-aq7vTknRCPovC0S3krKm" data-form-id="aq7vTknRCPovC0S3krKm" title="Contact Form"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer class="x-footer">
+  <p>eProxim, Alpharetta, Iași and Gurgaon. Product models from Poly Haven (CC0).</p>
+  <p><a href="https://eproxim.com/privacy-policy/">Privacy Policy</a> <a href="https://eproxim.com/terms-of-service/">Terms of Service</a></p>
+</footer>
+</div>
+<script type="module" src="xp.js"></script></body></html>
