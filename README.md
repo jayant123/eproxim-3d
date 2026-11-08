@@ -9,3 +9,6 @@ Public assets for the 3D store experience on eproxim.com, served through jsDeliv
 - `models/*.glb` and `env/*.hdr` come from [Poly Haven](https://polyhaven.com) and are CC0 (public domain).
   Models: desk_lamp_arm_01, mid_century_lounge_chair, ceramic_vase_02, alarm_clock_01, boombox (1k textures,
   converted with gltf-transform: WebP textures, meshopt geometry). HDRI: studio_small_09 (1k).
+
+- `impossible/is.js` is "The Impossible Store", built from `pages/impossible-store/build.py` in eproxim-seo.
+  It reuses the same models and HDRI.
