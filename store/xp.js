@@ -399,7 +399,7 @@ function main() {
     const sys = sstep(0.66, 0.72, p) * (1 - sstep(0.86, 0.9, p));
     const cardOn = sstep(0.42, 0.46, p) * (1 - sstep(0.68, 0.71, p));
     if (isMobile()) camera.setViewOffset(W, H, -W * 0.2 * (1 - sys) * (1 - cardOn), -H * 0.1 + H * 0.16 * cardOn, W, H);
-    else camera.setViewOffset(W, H, -W * 0.13 * (1 - sys * 0.4), 0, W, H);
+    else camera.setViewOffset(W, H, -W * (0.13 + 0.05 * sys), 0, W, H);
     camera.updateProjectionMatrix();
   }
   addEventListener('resize', resize);
