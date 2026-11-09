@@ -11,3 +11,13 @@ Public assets for the 3D store experience on eproxim.com, served through jsDeliv
   converted with gltf-transform: WebP textures, meshopt geometry). HDRI: studio_small_09 (1k).
 
   It reuses the same models and HDRI.
+
+## garden/ (homepage hero)
+
+    https://cdn.jsdelivr.net/gh/jayant123/eproxim-3d@<garden-tag>/garden/garden.js
+
+- `garden/garden.js` is the luminous botanical hero: seeded procedural vines, leaves and blooms that grow
+  around the homepage copy. Built from the private eproxim-seo repo (`pages/home-garden/`, `node build.mjs <tag>`),
+  three.js r160 bundled in. `?garden=<seed>` replays a garden, `&gt=<seconds>` freezes time, `&gdebug=1` shows the copy boxes.
+- `garden/corner-*.png` are the static fallback corners shown when WebGL is unavailable.
+
