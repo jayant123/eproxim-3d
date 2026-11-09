@@ -19,5 +19,7 @@ Public assets for the 3D store experience on eproxim.com, served through jsDeliv
 - `garden/garden.js` is the luminous botanical hero: seeded procedural vines, leaves and blooms that grow
   around the homepage copy. Built from the private eproxim-seo repo (`pages/home-garden/`, `node build.mjs <tag>`),
   three.js r160 bundled in. `?garden=<seed>` replays a garden, `&gt=<seconds>` freezes time, `&gdebug=1` shows the copy boxes.
+- v2 adds the scroll vine (`epxGardenConfig.side`): a vine that grows down the right margin as the visitor scrolls,
+  avoiding text, media and cards (`?vine=<seed>` replays one). Off below 900px wide.
 - `garden/corner-*.png` are the static fallback corners shown when WebGL is unavailable.
 
