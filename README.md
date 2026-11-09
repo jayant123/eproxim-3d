@@ -21,5 +21,8 @@ Public assets for the 3D store experience on eproxim.com, served through jsDeliv
   three.js r160 bundled in. `?garden=<seed>` replays a garden, `&gt=<seconds>` freezes time, `&gdebug=1` shows the copy boxes.
 - v2 adds the scroll vine (`epxGardenConfig.side`): a vine that grows down the right margin as the visitor scrolls,
   avoiding text, media and cards (`?vine=<seed>` replays one). Below 1100px it hugs the right edge (slim mode).
+- v3 tells the integration story: two plants (two systems) grow from left and right and meet at graft blooms;
+  each time the headline's system name changes, a pulse crosses the graft and opens a bud. The scroll vine carries
+  pulses down the page and ends in a bloom beside the closing call to action (hover brightens it).
 - `garden/corner-*.png` are the static fallback corners shown when WebGL is unavailable.
 
